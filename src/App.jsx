@@ -1,5 +1,3 @@
-import React from "react";
-import './output.css';
 import './App.css';
 
 import Header from "./components/Header";
@@ -80,51 +78,31 @@ function App() {
     <>
       <div className="container mx-auto max-w-screen-lg ">
         <Header />
-        <div>
+        <div className=" w-full h-full"> 
           <img src="./assets/banner.png" alt="" />
         </div>
 
-        <div className="flex gap-10">
+        <div className="flex gap-x-32 gap-y-10 flex-wrap">
           {books.map((book) => (
             <div
-              className="flex items-center border-green-900 gap-10 h-[300px]"
+              className="flex w-[25rem] h-[18.75rem] items-center mx-auto"
               key={book.id}
-              // style={{
-              //   border: "1px solid #ccc",
-              //   padding: "10px",
-              //   width: "424px",
-              //   display: "flex",
-              //   gap: "10px",
-
-              // }}
             >
-              <div className="w-16">
-                <img
+              <div className="w-[500px] h-[18.75rem]">
+                <img className="w-full h-full"
                   src={book.coverImage}
                   alt={book.title}
-                  // style={{
-                  //   width: "100%",
-                  //   height: "200px",
-                  //   paddingTop: "90px",
-                  // }}
                 />
               </div>
-              <div>
-                <h2 className="text-xl !font-bold">{book.title}</h2>
-                <p>{book.author}</p>
+              <div className="py-5 ml-5  text-left">
+              <p className="text-[0.8rem] text-[#5C6A79] font-[Montserrat]">{book.author}</p>
+                <h2 className="text-[1rem] !font-bold">{book.title}</h2>
                 <p>{book.reviews}</p>
-                <p>{book.description}</p>
-                <div
-                  // style={{
-                  //   display: "flex",
-                  //   justifyContent: "center",
-                  //   gap: "5px",
-                  //   fontWeight: "bold",
-                  //   paddingTop: "10px",
-                  // }}
+                <p className="text-[0.8rem] text-[#5C6A79] font-[Open_Sans]">{book.description}</p>
+                <div className="flex my-2"
                 >
-                  <p>{book.price}</p>
-                  <p>{book.discountedPrice}</p>
+                  <p className="!font-bold text-[0.9rem] line-through">{book.price}</p>
+                  <p className="text-[0.9rem] text-[#5C6A79] ml-3">{book.discountedPrice}</p>
                 </div>
                 <Button />
               </div>

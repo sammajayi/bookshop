@@ -24,9 +24,9 @@ const Header = () => {
       </nav>
 
       <div className="flex ml-5">
-        <img className="px-5" src="./assets/user.png" alt="user-profile" />
-        <img className="px-5" src="./assets/search.png" alt="search-bar" />
-        <img className="px-5" src="./assets/cart.png" alt="cart" />
+        <img className="px-5 cursor-pointer" src="./assets/user.png" alt="user-profile" />
+        <img className="px-5 cursor-pointer" src="./assets/search.png" alt="search-bar" />
+        <img className="px-5 cursor-pointer" src="./assets/cart.png" alt="cart" />
       </div>
     </header>
   );
