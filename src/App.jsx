@@ -9,7 +9,7 @@ const books = [
     id: 1,
     title: "Crazy Rich Asians",
     author: "Kevin Kwan",
-    coverImage: "./assets/cover/crazy.png",
+    coverImage: "./src/assets/cover/crazy.png",
     reviews: "4.5/5",
     description:
       "The outrageously funny debut novel about three super-rich, pedigreed Chinese families and the gossip",
@@ -20,7 +20,7 @@ const books = [
     id: 2,
     title: "The Handmaid's Tale",
     author: "Margaret Atwood",
-    coverImage: "./assets/cover/handmaid.png",
+    coverImage: "./src/assets/cover/handmaid.png",
     reviews: "4.0/5",
     description:
       "This novel can be interpreted as a double narrative, Offred's tale and the handmaids' tales. The night...",
@@ -31,7 +31,7 @@ const books = [
     id: 3,
     title: "Brave New World",
     author: "Aldous Huxley",
-    coverImage: "./assets/cover/brave.png",
+    coverImage: "./src/assets/cover/brave.png",
     reviews: "4.7/5",
     description:
       "Dystopian novel written in 1931 by English author Aldous Huxley, and published in 1932. Largely set in...",
@@ -42,7 +42,7 @@ const books = [
     id: 4,
     title: "Educated",
     author: "Tara Westover",
-    coverImage: "./assets/cover/educated.png",
+    coverImage: "./src/assets/cover/educated.png",
     reviews: "4.2/5",
     description:
       "It is a tale of fierce family loyalty and of the grief that comes with severing the closest of ties. With...",
@@ -53,7 +53,7 @@ const books = [
     id: 5,
     title: "The Weight of Things",
     author: "Marianne Fritz",
-    coverImage: "./assets/cover/weight.png",
+    coverImage: "./src/assets/cover/weight.png",
     reviews: "4.8/5",
     description:
       "You discover not an eccentric fluke of literary nature but rather a brilliant and masterful satiris...",
@@ -64,7 +64,7 @@ const books = [
     id: 6,
     title: "Mothers Stories",
     author: "Chris Power",
-    coverImage: "./assets/cover/mothers.png",
+    coverImage: "./src/assets/cover/mothers.png",
     reviews: "4.3/5",
     description:
       "the stories in Mothers lay bare the emotional and psychic damage of life, love, and abandonment...",
@@ -79,7 +79,7 @@ function App() {
       <div className="container mx-auto max-w-screen-lg ">
         <Header />
         <div className=" w-full h-full"> 
-          <img src="./assets/banner.png" alt="" />
+          <img src="./src/assets/banner.png" alt="" />
         </div>
 
         <div className="flex gap-x-32 gap-y-10 flex-wrap">
